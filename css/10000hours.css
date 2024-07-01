@@ -36,7 +36,7 @@
 body {
   font-family: 'GmarketSansMedium';
   background-color: #5b2386;
-  color: #fff;
+  color: #ffffff;
 }
 main #main-content {
   display: flex;
@@ -50,18 +50,322 @@ main #main-content {
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 .title-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+.title-wrap .clock-img {
+  position: relative;
+  width: 265px;
+  height: 265px;
 }
 .title-img {
-  width: 564px;
-  height: 112px;
   position: absolute;
+  width: 564px;
 }
 .title-img img {
   width: 100%;
+  height: auto;
+}
+
+.text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 46px;
+}
+.content-title {
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 39.6px;
+  color: #f5df4d;
+}
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 78px;
+}
+.content-detail img {
+  position: absolute;
+}
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  gap: 5px;
+}
+.content-detail span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'GmarketSansBold';
+}
+.content-detail span:first-child::after {
+  content: '은';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'GmarketSansMedium';
+}
+.content-input {
+  margin-top: 102px;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content-input input {
+  font-size: 24px;
+  border: none;
+  border-radius: 7px;
+  width: 228px;
+  height: 57px;
+  text-align: center;
+  color: #babcbe;
+  padding: 0 10px 0 10px;
+  margin: 0 15px 0 15px;
+}
+.time-input {
+  margin-top: 27px;
+}
+.time-input-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.calculate-btn {
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
+}
+.calculate-btn button {
+  background-color: #fcee21;
+  padding: 10px 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #5b2386;
+  font-family: 'GmarketSansBold';
+  border-radius: 56px;
+}
+.calculate-btn img {
+  width: 64px;
+  height: 72px;
+}
+.content-result {
+  margin-top: 147px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 17px;
+}
+.content-result span {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: 'GmarketSansBold';
+}
+.modal-btn-wrapper {
+  margin-top: 127px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+.modal-btn-wrapper button {
+  color: #5b2386;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 21px 49px 21px 49px;
+  border-radius: 56px;
+  font-family: 'GmarketSansBold';
+}
+.modal-btn {
+  background-color: #fcee21;
+}
+.share-btn {
+  background-color: #fff;
+}
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-family: 'OTEnjoystoriesBA';
+}
+.modal-title {
+  color: #5b2386;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+}
+.modal-title span:first-child {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 105.6px;
+}
+.modal-img img {
+  margin-top: 29px;
+  width: 433px;
+  height: 337px;
+}
+.modal-exit-button {
+  margin-top: 74px;
+}
+.modal-exit-button button {
+  font-family: 'GmarketSansBold';
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #fcee21;
+  color: #5b2386;
+  padding: 21px 49px 21px 49px;
+  border-radius: 56px;
+}
+footer {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 125px;
+  height: 25px;
+}
+footer span {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.38px;
+}
+.copyright-text {
+  margin-top: 20px;
+}
+@media all and (min-width: 320px) and (max-width: 850px) {
+  .title-img {
+    width: 267px;
+    height: 53px;
+  }
+  .title-wrap .clock-img {
+    width: 125px;
+    height: 126px;
+  }
+  .title-wrap {
+    margin-bottom: 30px;
+  }
+  .content-title {
+    font-size: 22px;
+  }
+  .text-content-wrapper {
+    margin-top: 0;
+  }
+  .content-detail {
+    margin-top: 45px;
+  }
+  .content-detail p {
+    font-size: 14px;
+  }
+  .content-detail span:first-child {
+    font-size: 14px;
+  }
+  .content-detail span:first-child::after {
+    font-size: 14px;
+  }
+  .content-detail img {
+    width: 80%;
+    height: auto;
+  }
+  .content-input {
+    font-size: 14px;
+    margin-top: 66px;
+  }
+  .calculate-btn {
+    font-size: 14px;
+  }
+  .content-result {
+    font-size: 14px;
+    margin-top: 64px;
+  }
+  .content-result span {
+    font-size: 24px;
+  }
+  .content-input input {
+    width: 156px;
+    height: 37px;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+  .time-input-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .calculate-btn {
+    margin-top: 49px;
+    align-items: end;
+  }
+  .calculate-btn button {
+    font-size: 14px;
+    padding: 23px 49px 21px 49px;
+    border-radius: 13px;
+    line-height: 16px;
+  }
+  .calculate-btn img {
+    width: 43px;
+    height: 48px;
+  }
+  .modal-btn-wrapper {
+    margin-top: 51px;
+  }
+  .modal-btn-wrapper button {
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 83px;
+  }
+  footer img {
+    width: 91px;
+    height: 18px;
+  }
+  footer span {
+    font-size: 9px;
+  }
+  /* 모달 모바일 */
+  .modal-wrapper {
+    width: 330px;
+    height: 500px;
+    border-radius: 30px;
+  }
+  .modal-title span:first-child {
+    font-size: 64px;
+    margin-top: 0;
+  }
+  .modal-img img {
+    width: 241px;
+    height: 188px;
+  }
+  .modal-exit-button {
+    margin-top: 34px;
+  }
+  .modal-exit-button button {
+    font-size: 14px;
+    border-radius: 13px;
+    width: 241px;
+    padding: 23px 49px 21px 49px;
+    border: 0;
+  }
+  #modal {
+    margin-top: 20px;
+  }
 }
